@@ -1,0 +1,9 @@
+=== FINAL QUANTITATIVE BENCHMARK: KAGGLE-TRAINED SWINIR (EPOCH 31) ===
+Best Training Epoch: 31
+Best Training Loss:  0.007496
+Unseen Validation Patches Tested: 100
+
+1. PSNR (dB):       39.12 dB
+2. SSIM:           0.9881 (98.3% structural match)
+3. RMSE:           0.0129 (only 1.5% residual error)
+4. Cross-Grad Err: 0.000491

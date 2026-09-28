@@ -1,0 +1,17 @@
+=== REGIONAL 8KM PATCH CORRELATION STATISTICAL REPORT (SOUTH OF AUSTRALIA) ===
+Region Bounds: Lat -50S to -30S, Lon 115E to 145E
+Total 8km x 8km Patches Analyzed: 93750
+
+1. Bathymetry vs Gravity Local Pearson R (8km sliding patches):
+   - Mean R:   0.5821
+   - Median R: 0.7394
+   - Std Dev:  0.4253
+
+2. Gravity vs Magnetic Local Pearson R (8km sliding patches):
+   - Mean R:   -0.0028
+   - Median R: -0.0009
+   - Std Dev:  0.4086
+
+3. Structural Alignment Index (SAI):
+   - Mean Index:   0.5135
+   - Median Index: 0.5208

@@ -1,0 +1,5 @@
+*.html linguist-detectable=false
+*.html linguist-documentation=true
+diagrams/*.html linguist-detectable=false
+diagrams/*.html linguist-documentation=true
+*.ipynb linguist-detectable=false

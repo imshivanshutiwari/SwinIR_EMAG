@@ -1,0 +1,4 @@
+# Requirements for checking code style
+ruff
+burocrata==0.2.*
+zizmor

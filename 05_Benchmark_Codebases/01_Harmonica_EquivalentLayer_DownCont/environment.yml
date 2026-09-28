@@ -1,0 +1,52 @@
+name: harmonica
+channels:
+  - conda-forge
+dependencies:
+  - python==3.12.*
+  - pip
+  # Build
+  - python-build
+  - twine
+  # Run-time
+  - numpy
+  - pandas
+  - numba
+  - scipy
+  - scikit-learn
+  - verde>=1.8.1
+  - xarray
+  - xrft>=1.0
+  - choclo>=0.1
+  - boule>=0.6
+  - bordado>=0.4.0
+  # Optional requirements
+  - pyvista
+  - vtk
+  - numba-progress
+  # Testing requirements
+  - pytest
+  - pytest-cov
+  - coverage
+  # Documentation requirements
+  - sphinx==7.2.*
+  - numpydoc==1.7.*
+  - sphinx-book-theme==1.1.*
+  - sphinx-gallery==0.15.*
+  - sphinx-design==0.5.*
+  - sphinx-copybutton==0.5.*
+  - jupyter-sphinx==0.5.*
+  - ipykernel
+  - pyproj
+  - matplotlib
+  - ensaio>=0.5.0
+  - verde>=1.9.0  # needed for some utilities used in docs
+  - netcdf4
+  - pygmt
+  - gmt
+  - gdal
+  - trame # needed by pyvista
+  # Code style checks and autoformat
+  - ruff
+  - zizmor
+  - pip:
+    - burocrata==0.2.*

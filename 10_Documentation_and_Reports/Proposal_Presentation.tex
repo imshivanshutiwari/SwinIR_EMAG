@@ -1,0 +1,169 @@
+\documentclass[aspectratio=169, xcolor=table]{beamer}
+
+% Professional Theme
+\usetheme{Madrid}
+\usecolortheme{whale}
+
+% Packages
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{hyperref}
+
+% Title Page Information
+\title[ML in Marine Geophysics \& Oceanography]{Predictive Machine Learning in Marine Geophysics and Oceanography}
+\subtitle{AI Solutions for Gravity Anomaly Resolution and ENSO-Aware Current Forecasting}
+\author[Shivanshu Tiwari]{Shivanshu Tiwari \\ \vspace{0.5cm} \footnotesize Supervisor: Pranjeet Sarkar}
+\date{September 2026}
+
+\begin{document}
+
+% Slide 1: Title
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Slide 2: Objectives
+\begin{frame}{Project Objectives}
+    \textbf{Core Goal:} To develop two state-of-the-art physics-informed deep learning models to solve critical resolution and forecasting gaps in oceanography.
+    \vspace{0.5cm}
+    \begin{enumerate}
+        \item \textbf{Geophysics:} Create a Super-Resolution ML model to predict high-resolution marine gravity anomalies from low-resolution datasets.
+        \vspace{0.2cm}
+        \item \textbf{Oceanography:} Build a Spatiotemporal Forecasting model to predict ocean currents while dynamically accounting for complex climate events like El Ni\~no (ENSO).
+    \end{enumerate}
+\end{frame}
+
+% Slide 3: Problem 1
+\begin{frame}{Part 1: The Gravity Anomaly Problem}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \textbf{The Challenge:}
+            \begin{itemize}
+                \item Low-resolution Bouguer-like gravity maps are readily available globally.
+                \item High-resolution maps (crucial for identifying hidden seamounts and trenches) are difficult and expensive to acquire via shipborne surveys.
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \centering
+            % Placeholder for the Global Map
+            \includegraphics[width=0.9\textwidth, height=0.6\textheight, keepaspectratio]{C:/Users/shiva/Downloads/Indian_Ocean_Features/grav_SWOT_05_Global.png} \\
+            \footnotesize \textit{Current Global High-Res Coverage}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Slide 4: Solution 1
+\begin{frame}{Part 1: The Machine Learning Solution}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \textbf{Physics-Informed Super Resolution:}
+            \begin{itemize}
+                \item \textbf{Method:} Use easily available low-res maps as input to predict uncharted high-res anomalies.
+                \item \textbf{Ground Truth:} Train on cutting-edge SWOT V05 data (1 arc-minute resolution).
+                \item \textbf{Outcome:} Extrapolate precise geological features globally.
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \centering
+            \includegraphics[width=0.9\textwidth, height=0.6\textheight, keepaspectratio]{C:/Users/shiva/Downloads/Indian_Ocean_Features/grav_SWOT_05_IndianOcean_Features_Colored.png} \\
+            \footnotesize \textit{High-Res Features (Seamounts/Trenches)}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Slide 5: Architecture 1
+\begin{frame}{Part 1: Architecture (Swin Transformer)}
+    \textbf{State-of-the-Art Design (2026): Physics-Informed Swin Transformer}
+    \vspace{0.3cm}
+    \begin{itemize}
+        \item \textbf{Input:} Low-res Gravity, Bathymetry, Vertical Deflections (4 channels).
+        \item \textbf{Core:} 6 Residual Swin Transformer Blocks (RSTB) to capture global spatial dependencies via Self-Attention.
+        \item \textbf{Physics Constraint:} Custom Spectral Loss Layer enforcing Laplace's equation ($\nabla^2 g = 0$). Prevents physically impossible predictions.
+        \item \textbf{Output:} 1 arc-minute High-Resolution Gravity map.
+    \end{itemize}
+\end{frame}
+
+% Slide 6: Problem 2
+\begin{frame}{Part 2: The Ocean Current Problem}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \textbf{The Challenge:}
+            \begin{itemize}
+                \item Ocean currents are generally predictable, but weather disturbances (El Ni\~no/ENSO) cause massive, non-linear variations in velocity and temperature.
+                \item Traditional physics-based models (NEMO) struggle to adapt to these rapid climate-driven anomalies.
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \centering
+            \includegraphics[width=0.9\textwidth, height=0.6\textheight, keepaspectratio]{C:/Users/shiva/Downloads/Indian_Ocean_Features/Ocean_Current_Map.png} \\
+            \footnotesize \textit{Surface Current Velocities}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Slide 7: Solution 2
+\begin{frame}{Part 2: The Machine Learning Solution}
+    \textbf{Spatiotemporal Forecasting with Climate Embedding}
+    \vspace{0.3cm}
+    \begin{itemize}
+        \item \textbf{Method:} Train on a massive 5.5-year 4D dataset (Copernicus CMEMS) encompassing historical ENSO cycles.
+        \item \textbf{Innovation:} Explicitly embed real-time ENSO (Ni\~no 3.4) and IOD indices directly into the neural network to teach the model "teleconnections".
+        \item \textbf{Outcome:} Highly accurate predictions of $u$ and $v$ current velocities at multiple depths for $T+1, T+3, T+6$ months.
+    \end{itemize}
+\end{frame}
+
+% Slide 8: Architecture 2
+\begin{frame}{Part 2: Architecture (PhyGOSCR-Net)}
+    \textbf{Physics-Guided Ocean Surface Current Reconstruction Network}
+    \vspace{0.2cm}
+    \begin{itemize}
+        \item \textbf{Spatial Encoder:} Multi-scale Dilated CNN to capture local eddies (dilation=1), mesoscale gyres (dilation=3), and basin-wide ENSO signals (dilation=9).
+        \item \textbf{Temporal Encoder:} 4-Layer Transformer Encoder to process the 12-month rolling history.
+        \item \textbf{Physics Constraints:} 
+        \begin{itemize}
+            \item \textit{Geostrophic Balance Loss:} Enforces physical relationship between Sea Surface Height and Current Velocity.
+            \item \textit{Non-Divergence Loss:} Enforces fluid incompressibility.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+% Slide 9: Data Readiness
+\begin{frame}{Data Readiness \& Acquisition}
+    \textbf{100\% of required datasets have been successfully acquired and stored locally:}
+    \vspace{0.3cm}
+    \begin{table}[]
+        \centering
+        \resizebox{\textwidth}{!}{
+        \begin{tabular}{@{}llc@{}}
+        \toprule
+        \textbf{Dataset} & \textbf{Source} & \textbf{Status} \\ \midrule
+        High-Res Gravity (SWOT V05) & UCSD / Sandwell & \textbf{Ready} \\
+        3D Ocean Currents ($u, v$) 2020-2026 & Copernicus CMEMS & \textbf{Ready} (40 GB) \\
+        Ocean Temperature \& SSH & Copernicus CMEMS & \textbf{Ready} \\
+        Ocean Salinity & Copernicus CMEMS & \textbf{Ready} (15 GB) \\
+        Surface Wind Stress & ECMWF ERA5 & \textbf{Ready} \\
+        ENSO \& IOD Climate Indices & NOAA / JAMSTEC & \textbf{Ready} \\ \bottomrule
+        \end{tabular}
+        }
+    \end{table}
+\end{frame}
+
+% Slide 10: Conclusion
+\begin{frame}{Summary \& Next Steps}
+    \textbf{Summary:}
+    \begin{itemize}
+        \item We have architected two state-of-the-art, physics-informed AI models.
+        \item The models directly address the supervisor's requirements regarding high-resolution gravity mapping and ENSO-aware current forecasting.
+        \item All necessary data (over 60 GBs of high-fidelity geospatial and oceanographic records) is fully downloaded and prepared.
+    \end{itemize}
+    \vspace{0.5cm}
+    \textbf{Next Steps (Post-Approval):}
+    \begin{itemize}
+        \item Implement PyTorch architectures.
+        \item Execute data fusion and preprocessing pipelines.
+        \item Commence GPU training and validation.
+    \end{itemize}
+\end{frame}
+
+\end{document}

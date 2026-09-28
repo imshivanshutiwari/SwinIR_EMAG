@@ -1,0 +1,60 @@
+# Copyright (c) 2018 The Harmonica Developers.
+# Distributed under the terms of the BSD 3-Clause License.
+# SPDX-License-Identifier: BSD-3-Clause
+#
+# This code is part of the Fatiando a Terra project (https://www.fatiando.org)
+#
+"""
+Upward continuation of a regular grid
+=====================================
+"""
+
+import ensaio
+import pygmt
+import verde as vd
+import xarray as xr
+
+import harmonica as hm
+
+# Fetch magnetic grid over the Lightning Creek Sill Complex, Australia using
+# Ensaio and load it with Xarray
+fname = ensaio.fetch_lightning_creek_magnetic(version=1)
+magnetic_grid = xr.load_dataarray(fname)
+
+# Upward continue the magnetic grid, from 500 m to 1000 m
+# (a height displacement of 500m)
+upward_continued = hm.upward_continuation(magnetic_grid, height_displacement=500)
+# Show the upward continued grid
+print("\nUpward continued magnetic grid:\n", upward_continued)
+
+
+# Plot original magnetic anomaly and the upward continued grid
+fig = pygmt.Figure()
+with fig.subplot(nrows=1, ncols=2, figsize=("28c", "15c"), sharey="l"):
+    # Make colormap based on original data
+    cpt_lim = vd.maxabs(magnetic_grid, percentile=99.9)
+    pygmt.makecpt(cmap="balance+h0", series=[-cpt_lim, cpt_lim], background=True)
+    with fig.set_panel(panel=0):
+        # Plot magnetic anomaly grid
+        fig.grdimage(
+            grid=magnetic_grid,
+            projection="X?",
+            cmap=True,
+            frame="+tMagnetic Anomaly at 500m",
+        )
+    with fig.set_panel(panel=1):
+        # Plot upward continued grid
+        fig.grdimage(
+            grid=upward_continued,
+            projection="X?",
+            frame="+tUpward continued to 1000m",
+            cmap=True,
+        )
+    # Add colorbar
+    fig.colorbar(
+        cmap=True,
+        frame=["a1000f500", "x+lnT"],
+        position="n0/0+jTC+w12c/0.5c+h+o-0.5c/0.9c+e",
+    )
+
+fig.show()

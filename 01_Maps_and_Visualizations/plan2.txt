@@ -1,0 +1,163 @@
+Time
+#
+Log Message
+5.9s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+5.9s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+5.9s	3	0.00s - to python to disable frozen modules.
+5.9s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+6.4s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.4s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.4s	7	0.00s - to python to disable frozen modules.
+6.4s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.4s	9	total 4.0K
+7.4s	10	drwxr-xr-x 3 root root 4.0K Sep  4 11:19 datasets
+7.5s	11	total 4.0K
+7.5s	12	drwxr-xr-x 3 root root 4.0K Sep  4 11:19 shivanshuqubeats
+7.6s	13	total 12
+7.6s	14	drwxr-xr-x 3 root root 4096 Sep  4 11:19 .
+7.6s	15	drwxr-xr-x 3 root root 4096 Sep  4 11:19 ..
+7.6s	16	drwxr-xr-x 3 root root 4096 Sep  4 11:19 shivanshuqubeats
+7.7s	17	ls: cannot access '/kaggle/input/shivanshuqubeats/': No such file or directory
+7.8s	18	total 8
+7.8s	19	drwxr-xr-x 3 root   root    4096 Sep  4 11:19 .
+7.8s	20	drwxr-xr-x 3 root   root    4096 Sep  4 11:19 ..
+7.8s	21	drwxr-xr-x 4 nobody nogroup    0 Sep  4 11:11 kaggletrain
+8.0s	22	total 1178444
+8.0s	23	drwxr-xr-x 4 nobody nogroup         0 Sep  4 11:11 .
+8.0s	24	drwxr-xr-x 3 root   root         4096 Sep  4 11:19 ..
+8.0s	25	-rw-r--r-- 1 nobody nogroup      6516 Sep  4 11:11 benchmark_metrics.py
+8.0s	26	drwxr-xr-x 2 nobody nogroup         0 Sep  4 11:11 checkpoints
+8.0s	27	-rw-r--r-- 1 nobody nogroup      6438 Sep  4 11:11 dataset_indian_ocean.py
+8.0s	28	-rw-r--r-- 1 nobody nogroup  88633890 Sep  4 11:11 EMAG2_V3_SeaLevel_DataTiff.tif
+8.0s	29	-rw-r--r-- 1 nobody nogroup 491284376 Sep  4 11:11 ETOPO_2022_v1_60s_N90W180_bed.nc
+8.0s	30	-rw-r--r-- 1 nobody nogroup      7062 Sep  4 11:11 evaluate_regional_comparison.py
+8.0s	31	-rw-r--r-- 1 nobody nogroup 626746403 Sep  4 11:11 grav_SWOT_05.nc
+8.0s	32	-rw-r--r-- 1 nobody nogroup     10553 Sep  4 11:11 Kaggle_Training_SwinIR.ipynb
+8.0s	33	-rw-r--r-- 1 nobody nogroup      3694 Sep  4 11:11 physics_loss.py
+8.0s	34	drwxr-xr-x 3 nobody nogroup         0 Sep  4 11:11 SwinIR
+8.0s	35	-rw-r--r-- 1 nobody nogroup      4758 Sep  4 11:11 train_swinir_scaled.py
+10.9s	36	[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/10.1 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [91m━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.3/10.1 MB[0m [31m9.0 MB/s[0m eta [36m0:00:02[0m
+[2K   [91m━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.5/10.1 MB[0m [31m37.7 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━[0m [32m5.9/10.1 MB[0m [31m56.8 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m10.1/10.1 MB[0m [31m82.0 MB/s[0m eta [36m0:00:01[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m10.1/10.1 MB[0m [31m60.4 MB/s[0m eta [36m0:00:00[0m
+10.9s	37	[?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.6 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.6/1.6 MB[0m [31m64.5 MB/s[0m eta [36m0:00:00[0m
+13.4s	38	[?25h/kaggle/working
+13.9s	39	total 64K
+13.9s	40	-rw-r--r-- 1 root root 6.4K Sep  4 11:19 benchmark_metrics.py
+13.9s	41	drwxr-xr-x 2 root root 4.0K Sep  4 11:19 checkpoints
+13.9s	42	-rw-r--r-- 1 root root 6.3K Sep  4 11:19 dataset_indian_ocean.py
+13.9s	43	-rw-r--r-- 1 root root 6.9K Sep  4 11:19 evaluate_regional_comparison.py
+13.9s	44	-rw-r--r-- 1 root root  18K Sep  4 11:19 __notebook__.ipynb
+13.9s	45	-rw-r--r-- 1 root root 3.7K Sep  4 11:19 physics_loss.py
+13.9s	46	drwxr-xr-x 3 root root 4.0K Sep  4 11:19 SwinIR
+13.9s	47	-rw-r--r-- 1 root root 4.7K Sep  4 11:19 train_swinir_scaled.py
+28.7s	48	/usr/local/lib/python3.12/dist-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+28.7s	49	  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+28.7s	50	
+28.7s	51	/usr/local/lib/python3.12/dist-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+28.7s	52	  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+29.2s	53	Using device: cuda
+29.2s	54	GPU: Tesla T4
+29.2s	55	
+29.2s	56	Generating 2,000 spatial patches across Indian Ocean...
+29.2s	57	Opening datasets...
+30.1s	58	Generating 2000 valid spatial patch locations across Indian Ocean...
+161.0s	59	Successfully generated 2000 valid deep-ocean training patches.
+161.0s	60	/usr/local/lib/python3.12/dist-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+161.0s	61	  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+161.0s	62	
+161.0s	63	/usr/local/lib/python3.12/dist-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+161.0s	64	  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+161.2s	65	Successfully loaded pretrained weights!
+161.2s	66	
+161.2s	67	=== TRAINING UNTIL CONVERGENCE (EARLY STOPPING ENABLED) ===
+164.2s	68	Traceback (most recent call last):
+164.2s	69	  File "<string>", line 1, in <module>
+164.2s	70	  File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 131, in execute_notebook
+164.2s	71	    raise_for_execution_errors(nb, output_path)
+164.2s	72	  File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+164.2s	73	    raise error
+164.2s	74	papermill.exceptions.PapermillExecutionError: 
+164.2s	75	---------------------------------------------------------------------------
+164.2s	76	Exception encountered at "In [8]":
+164.2s	77	---------------------------------------------------------------------------
+164.2s	78	RasterioIOError                           Traceback (most recent call last)
+164.2s	79	/tmp/ipykernel_24/3872420809.py in <cell line: 0>()
+164.2s	80	     78     steps = 0
+164.2s	81	     79 
+164.2s	82	---> 80     for x, y, b in dataloader:
+164.2s	83	     81         x, y, b = x.to(device), y.to(device), b.to(device)
+164.2s	84	     82         optimizer.zero_grad()
+164.2s	85	
+164.2s	86	/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py in __next__(self)
+164.2s	87	    739                 # TODO(https://github.com/pytorch/pytorch/issues/76750)
+164.2s	88	    740                 self._reset()  # type: ignore[call-arg]
+164.2s	89	--> 741             data = self._next_data()
+164.2s	90	    742             self._num_yielded += 1
+164.2s	91	    743             if (
+164.2s	92	
+164.2s	93	/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py in _next_data(self)
+164.2s	94	   1546                 worker_id = self._task_info.pop(idx)[0]
+164.2s	95	   1547                 self._rcvd_idx += 1
+164.2s	96	-> 1548                 return self._process_data(data, worker_id)
+164.2s	97	   1549 
+164.2s	98	   1550     def _try_put_index(self) -> None:
+164.2s	99	
+164.2s	100	/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py in _process_data(self, data, worker_idx)
+164.2s	101	   1584         self._try_put_index()
+164.2s	102	   1585         if isinstance(data, ExceptionWrapper):
+164.2s	103	-> 1586             data.reraise()
+164.2s	104	   1587         return data
+164.2s	105	   1588 
+164.2s	106	
+164.2s	107	/usr/local/lib/python3.12/dist-packages/torch/_utils.py in reraise(self)
+164.2s	108	    773             # be constructed, don't try to instantiate since we don't know how to
+164.2s	109	    774             raise RuntimeError(msg) from None
+164.2s	110	--> 775         raise exception
+164.2s	111	    776 
+164.2s	112	    777 
+164.2s	113	
+164.2s	114	RasterioIOError: Caught RasterioIOError in DataLoader worker process 0.
+164.2s	115	Original rasterio._err.CPLE_AppDefinedError: PackBitsDecode:Not enough data for scanline 2175
+164.2s	116	
+164.2s	117	The above exception was the direct cause of the following exception:
+164.2s	118	
+164.2s	119	rasterio._err.CPLE_AppDefinedError: TIFFReadEncodedStrip() failed.
+164.2s	120	
+164.2s	121	The above exception was the direct cause of the following exception:
+164.2s	122	
+164.2s	123	Traceback (most recent call last):
+164.2s	124	  File "rasterio/_io.pyx", line 896, in rasterio._io.DatasetReaderBase._read
+164.2s	125	  File "rasterio/_io.pyx", line 173, in rasterio._io.io_multi_band
+164.2s	126	  File "rasterio/_io.pyx", line 179, in rasterio._io.io_multi_band
+164.2s	127	  File "rasterio/_err.pyx", line 325, in rasterio._err.StackChecker.exc_wrap_int
+164.2s	128	rasterio._err.CPLE_AppDefinedError: EMAG2_V3_SeaLevel_DataTiff.tif, band 1: IReadBlock failed at X offset 0, Y offset 2175: TIFFReadEncodedStrip() failed.
+164.2s	129	
+164.2s	130	The above exception was the direct cause of the following exception:
+164.2s	131	
+164.2s	132	Traceback (most recent call last):
+164.2s	133	  File "/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/worker.py", line 358, in _worker_loop
+164.2s	134	    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+164.2s	135	           ^^^^^^^^^^^^^^^^^^^^
+164.2s	136	  File "/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+164.2s	137	    data = [self.dataset[idx] for idx in possibly_batched_index]
+164.2s	138	            ~~~~~~~~~~~~^^^^^
+164.2s	139	  File "/kaggle/working/dataset_indian_ocean.py", line 80, in __getitem__
+164.2s	140	    m_hr = self.src_emag.read(1, window=win, out_shape=(self.patch_size_hr, self.patch_size_hr), resampling=rasterio.enums.Resampling.bilinear).astype(np.float32)
+164.2s	141	           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+164.2s	142	  File "rasterio/_io.pyx", line 571, in rasterio._io.DatasetReaderBase.read
+164.2s	143	  File "rasterio/_io.pyx", line 899, in rasterio._io.DatasetReaderBase._read
+164.2s	144	rasterio.errors.RasterioIOError: Read failed. See previous exception for details.
+164.2s	145	
+164.2s	146	
+166.2s	147	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+166.2s	148	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+166.3s	149	/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+166.3s	150	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+166.9s	151	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+167.2s	152	[NbConvertApp] Writing 28639 bytes to __notebook__.ipynb
+169.5s	153	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+170.3s	154	[NbConvertApp] Writing 315202 bytes to __results__.html

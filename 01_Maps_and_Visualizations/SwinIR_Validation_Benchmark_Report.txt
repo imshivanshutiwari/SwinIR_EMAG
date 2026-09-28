@@ -1,0 +1,7 @@
+=== SCIENTIFIC ACCURACY BENCHMARK ON UNSEEN VALIDATION DATA ===
+Number of unseen test patches: 50
+
+1. PSNR (dB): Bicubic = inf dB, SwinIR = 32.71 dB (Gain: -inf dB)
+2. SSIM:     Bicubic = 0.9913, SwinIR = 0.9749 (Gain: -0.0163)
+3. RMSE:     Bicubic = 0.0105, SwinIR = 0.0234 (Reduction: +123.0%)
+4. CG Error: Bicubic = 0.000542, SwinIR = 0.000558 (Reduction: +3.0%)
